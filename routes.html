@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://kit.fontawesome.com/18947f3d1e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Routes</title>
+</head>
+<body>
+        <a id="skip-link" href="#main-content">Skip to main content</a>
+        <header class="navbar">
+                <h1 id="homepage-heading">
+                        <a href="index.html">A runner's journal</a>
+                </h1>
+                <nav>
+                        <ul>
+                            <li><a class="nav-link" href="journal.html">Journal</a></li>
+                            <li><a class="nav-link" href="index.html">Homepage</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link-active" href="routes.html" tabindex="0">Routes</a>
+                      
+                                <div class="dropdown-content" tabindex="-1">
+                                    <a href="routes.html#short_runs">Short Runs</a>
+                                    <a href="routes.html#medium_runs">Medium Runs</a>
+                                    <a href="routes.html#long_runs">Long Runs</a>
+                                </div>
+                            </li>
+                        </ul>
+                </nav>
+        </header>
+        <main id="main-content" tabindex="-1"> 
+        <div class="start">
+                <p>Ann Arbor is filled with beautiful, convinient paths to run, walk, and bike on. These are some of my favorite
+                        places to run. Click on an image to see another.</p>
+                <div class="routes_group" tabindex="0">
+                        <div class="item-group" tabindex="0">
+                                <img src="images/Arb/arb.jpeg" id="item1" class="clickable-image"
+                                        alt="Nichols Arboretum Reader Center sign and path, with white house and greens in background." tabindex="0">
+                                <img src="images/Arb/arb2.jpeg" id="item2" class="toggle-image" style="display: none;"
+                                        alt="Wooden running path with leaves and trees on either side." tabindex="0">
+                                <p class="place">Nichols Arboretum</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/campus/campus.jpeg" id="item3" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/campus/campus2.jpeg" id="item4" class="toggle-image" style="display: none;"
+                                        alt="" tabindex="0">
+                                <p class="place">UM Central Campus</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/north-campus/north.jpeg" id="item5" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/north-campus/north2.jpeg" id="item6" class="toggle-image"
+                                        style="display: none;" alt="" tabindex="0">
+                                <p class="place">UM North Campus</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/burns-park/burnspark.jpeg" id="item7" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/burns-park/burnspark2.jpeg" id="item8" class="toggle-image"
+                                        style="display: none;" alt="" tabindex="0">
+                                <p class="place">Burns Park</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/Lillie-park/Lillie-park.jpeg" id="item9" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/Lillie-park/snow.webp" id="item10" class="toggle-image" style="display: none;"
+                                        alt="" tabindex="0">
+                                <p class="place">Lillie Park</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/south-campus/mall.jpeg" id="item11" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/south-campus/south.jpeg" id="item12" class="toggle-image"
+                                        style="display: none;" alt="" tabindex="0">
+                                <p class="place">South of campus</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/huron-river/bridge.jpeg" id="item13" class="clickable-image" alt="">
+                                <img src="images/huron-river/river" id="item14" class="toggle-image" style="display: none;"
+                                        alt="" tabindex="0">
+                                <p class="place">Huron River</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/gallup-park/galloproute.jpeg" id="item15" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/gallup-park/park2.jpeg" id="item16" class="toggle-image" style="display: none;"
+                                        alt="">
+                                <p class="place">Gallup Park</p>
+                        </div>
+                        <div class="item-group" tabindex="0">
+                                <img src="images/farm-park/farm.jpeg" id="item17" class="clickable-image" alt="" tabindex="0">
+                                <img src="images/farm-park/farm.webp" id="item18" class="toggle-image" style="display: none;"
+                                        alt="" tabindex="0">
+                                <p class="place">Farm Park</p>
+                        </div>
+                </div>
+        </div>
+        <div class="routes_length">
+                <div id="short_runs" tabindex="0">
+                        <div class="run-container">
+                                <p class="text-intro">Short runs around Ann Arbor</p>
+                                <img src="images/4miles.png" alt="Example from Strava of a four mile run around Ann Arbor." tabindex="0">
+                                <p class="text">4 miles</p>
+                        </div>
+                        <div class="run-container">
+                                <img src="images/4miles2.png"
+                                        alt="Example two from Strava of a four mile run around Ann Arbor." tabindex="0">
+                                <p class="text">4 miles</p>
+                        </div>
+                </div>
+                <div id="medium_runs" tabindex="0"> 
+                        <div class="run-container">
+                                <p class="text-intro">Medium runs around Ann Arbor</p>
+                                <img src="images/10miles.png" alt="Example from Strava of a ten mile run around Ann Arbor." tabindex="0">
+                                <p class="text">10 miles</p>
+                        </div>
+                        <div class="run-container">
+                                <img src="images/halfmara.png"
+                                        alt="Example from Strava of a half marathon course around Ann Arbor." tabindex="0">
+                                <p class="text">Half Marathon (13.1 Miles)</p>
+                        </div>
+                </div>
+                <div id="long_runs" tabindex="0">
+                        <div class="run-container">
+                                <p class="text-intro">Long runs around Ann Arbor</p>
+                                <img src="images/20miles.png" alt="Example from Strava of a twenty mile run around Ann Arbor." tabindex="0">
+                                <p class="text">20 miles</p>
+                        </div>
+                </div>
+        </div>
+        </main>
+        <footer class="navfooter">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2xl"></i></a>
+                <a href="https://www.strava.com/dashboard"><i class="fab fa-strava fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2xl"></i></a>
+        </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+

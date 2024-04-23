@@ -1,0 +1,48 @@
+
+
+/* BODY  */
+.routes_group {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; }
+
+.item-group {
+  position: relative;
+  overflow: hidden; 
+  width: calc(50% - 5px); /* Initially, two items side by side with gap in between */
+  height: 200px; 
+  margin-bottom: 10px; /* Add margin between groups */
+}
+
+.item-group img {
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  width: 100%;
+  height: 100%; /* Ensure image fills the container */
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+.toggle-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover entire container */
+  height: 100%; /* Cover entire container */
+  object-fit: cover; /* Ensure image covers entire container */
+  display: none;
+}
+
+
+@media (min-width: 900px) {
+  .routes_group {
+      justify-content: space-between; /* Spread items across the container */
+  }
+
+  .item-group {
+      width: calc(33.3333% - 10px); /* Three items in a row with gap in between */
+  }} 
+
+
+

@@ -1,0 +1,266 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgba(202, 195, 242, 0.88);
+    position: relative;
+    min-height: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header{
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+#skip-link {
+    border: 5px solid black;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: -9999px;
+}
+
+#skip-link:focus {
+    left: auto;
+    top: 90px;
+    width: auto;
+    height: auto;
+}
+.start p{
+    font-size: 25px;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    background-color:rgb(63, 4, 98);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position:fixed; 
+    padding: 0 50px;
+}
+.navbar .logo img {
+    width: 100%;
+    margin-top: 10px;
+}
+.navbar .nav-link {
+    display: inline;
+    padding-right: 150px;
+    color: white;
+}
+.navbar .nav-link-active{
+    border: solid 3px white; 
+    color: white;
+
+}
+.navbar .nav-link:hover{
+    text-decoration: underline;
+    font-size: x-large;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+/* Main */
+.container {
+    display: flex;
+    border: 2px solid black;
+}
+.questions {
+    flex: 3fr;
+    padding-top: 120px;
+    padding-left: 10px;
+    width: 75%;
+}
+.links-container{ 
+    flex: 2fr;
+    padding-top: 120px;
+}
+.link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 20px; 
+}
+.link:visited {
+    text-decoration: none;
+}
+.link img {
+    width: 125px;
+    height: auto;
+}
+#homepage-heading a{
+    color: white;
+}
+
+h2{ 
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+h4 {
+    align-self: right;
+    font-size: 25px;
+
+}
+
+
+/* BODY  */
+.start {
+    padding-top: 120px;
+    text-align: center;
+}
+.routes_group {
+    border: 5px solid black;
+    /* padding-bottom: 100px; */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px; }
+
+  
+  .item-group {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden; 
+    width: calc(50% - 5px); /* Initially, two items side by side with gap in between */
+    height: 400px; 
+    margin: 5px;
+  }
+
+  
+  .item-group img {
+    width: 100%;
+    height: 100%; /* Ensure image fills the container */
+    object-fit: cover; /* Ensure image covers the container */
+  }
+  
+  .toggle-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: none;
+  }
+
+  .place {
+    color: black;
+    padding: 10px;
+    position: absolute;
+    bottom:0;  
+    left: 0;  
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background to improve readability */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+  
+  .instructions{
+    padding-top: 120px;
+    text-align: center;
+    color: black;
+    padding-bottom: 100px;
+  }
+  .form{
+    align-self: center;
+    height: 100%;
+    
+  }
+  .routes_length {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#short_runs,
+#medium_runs,
+#long_runs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.run-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.text-intro {
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.text {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.routes_length img {
+    border: 5px solid black;
+    max-width: 75%;
+    height: auto;
+    margin: 5px;
+}
+  
+  @media (min-width: 900px) {
+    .routes_group {
+        justify-content: space-between; /* Spread items across the container */
+    }
+  
+    .item-group {
+        width: calc(30% - 5px); /* Three items in a row with gap in between */
+    }} 
+
+
+
+/* Footer */ 
+footer{
+    position: absolute;
+    background-color:rgb(63, 4, 98);
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    width: 100%;
+}
+footer i{
+    padding: 20px;
+    color: white;
+}
